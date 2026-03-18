@@ -1,0 +1,99 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:sans-serif;
+  background:#020617;
+  color:white;
+}
+
+/* CURSOR */
+.cursor{
+  position:fixed;
+  width:20px;height:20px;
+  background:#38bdf8;
+  border-radius:50%;
+  pointer-events:none;
+  box-shadow:0 0 20px #38bdf8;
+}
+
+/* GEARS */
+.gear{
+  position:fixed;
+  opacity:0.08;
+  animation:spin linear infinite;
+}
+
+.gear1{width:200px;top:10%;left:10%;animation-duration:20s;}
+.gear2{width:150px;bottom:10%;right:10%;animation-duration:15s;}
+.gear3{width:120px;top:50%;left:50%;animation-duration:25s;}
+
+@keyframes spin{
+  from{transform:rotate(0)}
+  to{transform:rotate(360deg)}
+}
+
+/* SIDEBAR */
+.sidebar{
+  width:300px;height:100vh;
+  position:fixed;
+  background:#020617;
+  padding:20px;
+  text-align:center;
+}
+
+.avatar{
+  width:150px;
+  border-radius:50%;
+  border:3px solid #38bdf8;
+  box-shadow:0 0 30px #38bdf8;
+  animation:float 3s infinite;
+}
+
+@keyframes float{
+  50%{transform:translateY(-10px)}
+}
+
+.name{margin-top:10px}
+.role{color:#38bdf8}
+
+/* MAIN */
+.main{margin-left:300px;padding:30px}
+
+/* NAV */
+.nav button{
+  background:none;
+  border:1px solid #38bdf8;
+  color:#38bdf8;
+  padding:10px;
+  margin-right:10px;
+}
+
+.nav button.active{
+  background:#38bdf8;color:black;
+}
+
+/* PAGE */
+.page{display:none}
+.page.active{display:block}
+
+/* CARD */
+.card{
+  margin-top:20px;
+  padding:20px;
+  background:#020617;
+  border-radius:10px;
+}
+
+/* PROJECT */
+.project:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 10px #38bdf8;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:10px;
+  padding:10px;
+  background:#38bdf8;
+  border:none;
+}
