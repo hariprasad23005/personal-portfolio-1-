@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hari Prasad Portfolio</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- GEARS -->
+<img src="assets/images/gear.png" class="gear gear1">
+<img src="assets/images/gear.png" class="gear gear2">
+<img src="assets/images/gear.png" class="gear gear3">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<img src="assets/images/avatar.png" class="avatar">
+
+<h1 class="name">MADDILI HARI PRASAD</h1>
+<p class="role">Mechanical Engineer</p>
+
+<p>📧 hariprasad123005@gmail.com</p>
+<p>📱 6309683209</p>
+
+<button class="btn" onclick="downloadResume()">Download Resume</button>
+
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="nav">
+<button class="active" onclick="showPage('about',this)">About</button>
+<button onclick="showPage('resume',this)">Resume</button>
+<button onclick="showPage('portfolio',this)">Portfolio</button>
+<button onclick="showPage('contact',this)">Contact</button>
+</div>
+
+<div id="about" class="page active">
+<div class="card">
+<h2>About Me</h2>
+<p>I am a Mechanical Engineer passionate about Robotics, IoT and Automation.</p>
+</div>
+</div>
+
+<div id="resume" class="page">
+<div class="card">
+<h2>Skills</h2>
+<p>AutoCAD ⭐⭐⭐⭐⭐</p>
+<p>SolidWorks ⭐⭐⭐⭐</p>
+<p>Python ⭐⭐⭐</p>
+</div>
+</div>
+
+<div id="portfolio" class="page">
+<div class="card">
+<h2>Projects</h2>
+<div class="project">⚙️ Gear Design</div>
+<div class="project">🚗 Robotic Parking</div>
+<div class="project">📡 IoT System</div>
+</div>
+</div>
+
+<div id="contact" class="page">
+<div class="card">
+<h2>Contact</h2>
+<input placeholder="Name"><br><br>
+<input placeholder="Email"><br><br>
+<textarea placeholder="Message"></textarea>
+</div>
+</div>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
